@@ -1,0 +1,144 @@
+{
+  "users": [
+    {
+      "email": "saidislammamasaliev@gmail.com",
+      "password": "mamasaliev/",
+      "hospitalname": "hospital",
+      "number": "0709 00 88 17",
+      "id": 1
+    },
+    {
+      "email": "mamasalievsaidislam@gmail.com",
+      "password": "saidislam",
+      "hospitalname": "saadat",
+      "number": "0709008817",
+      "id": 2
+    },
+    {
+      "email": "mamasalievsaidislam@gmail.com",
+      "password": "saidislam",
+      "hospitalname": "Doctor Ay Bolit",
+      "number": "",
+      "id": 3
+    },
+    {
+      "email": "mamasalievarayona@gmail.com",
+      "password": "mamasalieva/05",
+      "hospitalname": "hospital",
+      "number": "",
+      "id": 4
+    },
+    {
+      "email": "saidislammasaliev@gmail.com",
+      "password": "saidislam",
+      "hospitalname": "hospital",
+      "number": "",
+      "id": 5
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "name": "saidislam",
+      "surname": "mamasaliev",
+      "patronymic": "saidislamovich",
+      "date": "08.08.1999",
+      "number": "0709 00 88 17",
+      "desc": {
+        "redBloodCells": null,
+        "Hemoglobin": null,
+        "Hematocrit": null,
+        "colorIndex": null,
+        "Leukocytes": null,
+        "Lymphocytes": null,
+        "Monocytes": null,
+        "Neutrophils": null,
+        "Basophils": null,
+        "Eosinophils": null,
+        "platelets": null,
+        "ESR": null
+      }
+    },
+    {
+      "name": "chelovek",
+      "surname": "mamasaliev",
+      "patronymic": "sardarov",
+      "date": "12.05.1999",
+      "number": "0709 00 88 18",
+      "desc": {
+        "redBloodCells": "xx",
+        "Hemoglobin": "xxx",
+        "Hematocrit": "xx",
+        "colorIndex": "xxx",
+        "Leukocytes": "xx",
+        "Lymphocytes": "xx",
+        "Monocytes": "xx",
+        "Neutrophils": "xx",
+        "Basophils": "xx",
+        "Eosinophils": "xx",
+        "platelets": "xx",
+        "ESR": "xx"
+      },
+      "id": 2
+    },
+    {
+      "name": "gulnura",
+      "surname": "pisatova",
+      "patronymic": "kursanovna",
+      "date": "09.11.2000",
+      "number": "0221120013",
+      "desc": {
+        "redBloodCells": "12",
+        "Hematocrit": "12",
+        "Leukocytes": "12",
+        "Monocytes": "12",
+        "Basophils": "v"
+      },
+      "id": 3
+    },
+    {
+      "name": "saidislam",
+      "surname": "mamasaliev",
+      "patronymic": "sardarov",
+      "date": "01.01.1999",
+      "number": "070000000",
+      "desc": {
+        "redBloodCells": "aa",
+        "Hemoglobin": "aa",
+        "Hematocrit": "aa",
+        "colorIndex": "a",
+        "Leukocytes": "aa",
+        "Lymphocytes": "aa",
+        "Monocytes": "aa",
+        "Neutrophils": "aa",
+        "Basophils": "a",
+        "Eosinophils": "a",
+        "platelets": "a",
+        "ESR": "a"
+      },
+      "id": 4
+    },
+    {
+      "name": "saidislam",
+      "surname": "mamasaliev",
+      "patronymic": "sardarov",
+      "date": "05.05.2005",
+      "number": "0709 00 88 17",
+      "desc": {
+        "redBloodCells": "ss",
+        "Hemoglobin": "ss",
+        "Hematocrit": "ss",
+        "colorIndex": "sss",
+        "Leukocytes": "ss",
+        "Lymphocytes": "ss",
+        "Monocytes": "ss",
+        "Neutrophils": "ss",
+        "Basophils": "ss",
+        "Eosinophils": "ss",
+        "platelets": "ss",
+        "ESR": "ss"
+      },
+      "id": 5
+    }
+  ]
+}

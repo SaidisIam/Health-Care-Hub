@@ -30,7 +30,7 @@ body {
 }
 
 .form {
-    width: 40%;
+    width: 37%;
     background-color: #fff;
     padding: 45px;
     border-radius: 10px;
@@ -253,6 +253,7 @@ input {
 /* PATIENTS   */
 
 .patients-main {
+    height: 100vh;
     background-color: #fff;
     margin-left: 260px;
 }
@@ -270,16 +271,28 @@ input {
     margin: 0px 35px;
 }
 
-.container {
+table {
+    background-color: #ececec;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr {
+    border: 1px solid #ececec;
+}
+
+.containe {
     height: 445px;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    padding: 0px;
-    margin-bottom: 10px;
-    border: 1px solid #D4D4D4;
-    border-radius: 5px;
 }
 
 .formList {
@@ -301,13 +314,22 @@ input {
     padding: 10px 20px;
 }
 
-.box:nth-child(even) {
+tr:nth-child(even){
     background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
 }
 
-.box:nth-child(1) {
+tr:nth-child(odd){
+    background-color: #E5E5E5;
+}
+
+.empty-boxes {
     height: 47px;
     background-color: #D4D4D4;
+}
+
+.empty-boxes:nth-child(1){
+    border-top-left-radius:5px;
 }
 
 .firstForm .box:nth-child(1) {
@@ -406,4 +428,26 @@ input {
     padding: 0px 35px;
     padding: 0px 35px 0px 35px;
     font-size: 16px;
+}
+
+/* LOOKDATA */
+
+.DataLook {
+    height: 100vh;
+    background-color: #fff;
+}
+
+.h3-block {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.h3-block h3 {
+    font-weight: 600;
+    font-size: 24px;
 }
