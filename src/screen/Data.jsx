@@ -82,61 +82,61 @@ const Data = () => {
                     <div className="inp-block">
                         <div className="box-style">
                             <label for="">Эритроциты</label>
-                            <input onChange={(e) => setOne(e.target.value)} className="flex" type="text" placeholder="Placeholder content" />
+                            <input onChange={(e) => setOne(e.target.value)} className="flex" type="text" placeholder="Placeholder content" required/>
                         </div>
                         <div className="box-style">
                             <label for="">Гемоглобин</label>
-                            <input onChange={(e) => setTwo(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" />
+                            <input onChange={(e) => setTwo(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" required/>
                         </div>
                     </div>
                     <div className="inp-block">
                         <div className="box-style">
                             <label for="">Гематокрит</label>
-                            <input onChange={(e) => setThree(e.target.value)} className="flex" type="text" placeholder="Placeholder content" />
+                            <input onChange={(e) => setThree(e.target.value)} className="flex" type="text" placeholder="Placeholder content" required/>
                         </div>
                         <div className="box-style">
                             <label for="">Цветовой показатель</label>
-                            <input  onChange={(e) => setFour(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" />
+                            <input  onChange={(e) => setFour(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" required/>
                         </div>
                     </div>
                     <div className="inp-block">
                         <div className="box-style">
                             <label for="">Лейкоциты</label>
-                            <input onChange={(e) => setFive(e.target.value)} className="flex" type="text" placeholder="Placeholder content" />
+                            <input onChange={(e) => setFive(e.target.value)} className="flex" type="text" placeholder="Placeholder content" required/>
                         </div>
                         <div className="box-style">
                             <label for="">Леймфоциты</label>
-                            <input onChange={(e) => setSix(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" />
+                            <input onChange={(e) => setSix(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" required/>
                         </div>
                     </div>
                     <div className="inp-block">
                         <div className="box-style">
                             <label for="">Моноциты</label>
-                            <input onChange={(e) => setSeven(e.target.value)} className="flex" type="text" placeholder="Placeholder content" />
+                            <input onChange={(e) => setSeven(e.target.value)} className="flex" type="text" placeholder="Placeholder content" required/>
                         </div>
                         <div className="box-style">
                             <label for="">Нейтрофилы</label>
-                            <input onChange={(e) => setEight(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" />
+                            <input onChange={(e) => setEight(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" required/>
                         </div>
                     </div>
                     <div className="inp-block">
                         <div className="box-style">
                             <label for="">Базофилы</label>
-                            <input onChange={(e) => setNine(e.target.value)} className="flex" type="text" placeholder="Placeholder content" />
+                            <input onChange={(e) => setNine(e.target.value)} className="flex" type="text" placeholder="Placeholder content" required/>
                         </div>
                         <div className="box-style">
                             <label for="">Эозинофилы</label>
-                            <input onChange={(e) => setTen(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" />
+                            <input onChange={(e) => setTen(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" required/>
                         </div>
                     </div>
                     <div className="inp-block">
                         <div className="box-style">
                             <label for="">Тромбоциты</label>
-                            <input onChange={(e) => setEleven(e.target.value)} className="flex" type="text" placeholder="Placeholder content" />
+                            <input onChange={(e) => setEleven(e.target.value)} className="flex" type="text" placeholder="Placeholder content" required/>
                         </div>
                         <div className="box-style">
                             <label for="">СОЭ</label>
-                            <input onChange={(e) => setTwelve(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" />
+                            <input onChange={(e) => setTwelve(e.target.value)} className="flex" type="text" name="" placeholder="Placeholder content" requiredq/>
                         </div>
                     </div>
                     <button className="btn-save data" onClick={f2} >Сохранить</button>

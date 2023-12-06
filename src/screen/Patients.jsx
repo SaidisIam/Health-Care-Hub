@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
+import axios from "axios";
 import { useDispatch, useSelector } from "react-redux"
 import { patientsF } from "../reduxtoolkit/toolkit";
 
@@ -10,28 +11,20 @@ const Patients = () => {
     const {state, setState} = useState()
     console.log(patients, "pp");
 
-
-    const searchF = async (e) => {
-        if (state != null) {
-            if (e.target.value != undefined) {
-                if (e.target.value.length > 1) {
-                    if (state != null) {
-                        let fil = state.filter(i => i.name.toLowerCase().includes(e.target.value.toLowerCase()))
-                        console.log(fil, "filter");
-                        setSearch(fil)
-                    }
-
-                } else {
-                    setSearch(null)
-                }
-            } else {
-                setSearch(null)
-            }
+    const GetPatients = async()=>{
+        const GetPatientsData = await axios ({
+            method: "get",
+            url: `http://localhost:8000/patients`
+        })
+        if(GetPatientsData.status == 200){
+            setState(GetPatientsData.data)
         }
     }
+    console.log(state, "Users");
 
     useEffect(() => {
         dispatch(patientsF())
+        GetPatients()
     }, [])
 
     return (
@@ -44,27 +37,27 @@ const Patients = () => {
                 </div>
 
                 <div className="search-form searchPatients">
-                    <input onChange={(e)=>setSearch(e.target.value)} className="search-form-txt" type="text" name="" placeholder="Поиск пациента" />
+                    <input onChange={(e) => setSearch(e.target.value)} className="search-form-txt" type="text" name="" placeholder="Поиск пациента" />
                     <i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </div>
 
-                {search != null ? <>
+                {/* {search != undefined ? <>
                     <div className="section">
-                        {/* {search.map( i => <> */}
-                        <div className="search-box">
-                            <p> <span style={{ "fontWeight": "1000" }}>Surname: </span > {search.surname}</p> <br />
-                            <p><span style={{ "fontWeight": "1000" }}>Name: </span> {search.name}</p> <br />
-                            <p><span style={{ "fontWeight": "1000" }}>Patronymic: </span> {search.patronymic}</p> <br />
-                        </div>
-                        <div style={{ "display": "flex", "justifyContent": "space-between", "width": "40%" }} className="search-box">
-                            <p><span style={{ "fontWeight": "1000" }}>Date: </span>{search.date}</p>
-                            <p><span style={{ "fontWeight": "1000" }}>Number: </span>{search.number}</p> <br />
-                        </div>
+                        {search.map(i => <>
+                            <div className="search-box">
+                                <h3>Пациент#:</h3> <br />
+                                <p><span style={{ "fontWeight": "1000" }}>Surname: </span> {i.surname}</p> <br />
+                                <p><span style={{ "fontWeight": "1000" }}>Name: </span> {i.name}</p> <br />
+                                <p><span style={{ "fontWeight": "1000" }}>Patronymic: </span> {i.patronymic}</p> <br />
+                            </div>
 
-
-                        {/* </>)} */}
+                            <div style={{ "display": "flex", "justifyContent": "space-between", "width": "40%" }} className="search-box">
+                                <p><span style={{ "fontWeight": "1000" }}>Date: </span>{i.date}</p>
+                                <p><span style={{ "fontWeight": "1000" }}>Number: </span>{i.number}</p> <br />
+                            </div> <br /> <br /> <br />
+                        </>)}
                     </div> <br />
-                </> : <></>}
+                </> : <></>} */}
 
                 <div className="section sectionPatients">
                     <div className="box-style">

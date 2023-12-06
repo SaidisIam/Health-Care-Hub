@@ -34,6 +34,41 @@
       "hospitalname": "hospital",
       "number": "",
       "id": 5
+    },
+    {
+      "email": "kuchkarovanilufar@gmail.com",
+      "password": "nilufar",
+      "hospitalname": "Doctor Ay Bolit",
+      "number": "",
+      "id": 6
+    },
+    {
+      "email": "kuchkarovanilufar@gmail.com",
+      "password": "nilufar",
+      "hospitalname": "Doctor Ay Bolit",
+      "number": "0709 00 88 17",
+      "id": 7
+    },
+    {
+      "email": "saidakbar@gmail.com",
+      "password": "saidakbar",
+      "hospitalname": "saadat",
+      "number": "",
+      "id": 8
+    },
+    {
+      "email": "saidakbar@gmail.com",
+      "password": "saidakbar",
+      "hospitalname": "Saadat",
+      "number": "",
+      "id": 9
+    },
+    {
+      "email": "said@gmail.com",
+      "password": "said",
+      "hospitalname": "saadat",
+      "number": "0000000",
+      "id": 10
     }
   ],
   "patients": [
@@ -44,20 +79,7 @@
       "patronymic": "saidislamovich",
       "date": "08.08.1999",
       "number": "0709 00 88 17",
-      "desc": {
-        "redBloodCells": null,
-        "Hemoglobin": null,
-        "Hematocrit": null,
-        "colorIndex": null,
-        "Leukocytes": null,
-        "Lymphocytes": null,
-        "Monocytes": null,
-        "Neutrophils": null,
-        "Basophils": null,
-        "Eosinophils": null,
-        "platelets": null,
-        "ESR": null
-      }
+      "desc": {}
     },
     {
       "name": "chelovek",
@@ -139,6 +161,28 @@
         "ESR": "ss"
       },
       "id": 5
+    },
+    {
+      "name": "rashida",
+      "surname": "mamasaliev",
+      "patronymic": "sardarovna",
+      "date": "17.06.2016",
+      "number": "0709 00 88 17",
+      "desc": {
+        "redBloodCells": "s",
+        "Hemoglobin": "s",
+        "Hematocrit": "s",
+        "colorIndex": "s",
+        "Leukocytes": "s",
+        "Lymphocytes": "s",
+        "Monocytes": "s",
+        "Neutrophils": "s",
+        "Basophils": "s",
+        "Eosinophils": "s",
+        "platelets": "s",
+        "ESR": "s"
+      },
+      "id": 6
     }
   ]
 }
